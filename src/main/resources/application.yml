@@ -13,3 +13,14 @@ spring:
     producer:
       key-serializer: org.apache.kafka.common.serialization.StringSerializer
       value-serializer: org.springframework.kafka.support.serializer.JacksonJsonSerializer
+
+building-permit:
+  geocoding:
+    provider: geo-admin
+    base-url: https://api3.geo.admin.ch
+    search-path: /rest/services/api/SearchServer
+    timeout: 5s
+    type: locations
+    origins: address,parcel
+    spatial-reference: 4326
+    limit: 1
