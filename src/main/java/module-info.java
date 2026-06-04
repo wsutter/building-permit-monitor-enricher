@@ -8,6 +8,7 @@ module ch.studior2.buildingpermitmonitor.enricher {
   requires spring.webflux;
   requires reactor.core;
   requires spring.web;
+  requires spring.boot.webclient;
 
   opens ch.studior2.buildingpermitmonitor.enricher to
       spring.core,
